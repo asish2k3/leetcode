@@ -1,0 +1,7 @@
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        maximumwealth = 0
+        for customer in accounts:
+            maximumwealth = max(maximumwealth, sum(customer))
+        return maximumwealth
+        
