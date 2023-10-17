@@ -1,0 +1,10 @@
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        running_sum = 0  
+        solution = []    
+        
+        for num in nums: 
+            running_sum += num  
+            solution.append(running_sum) 
+        
+        return solution
